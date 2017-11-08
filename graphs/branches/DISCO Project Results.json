@@ -1,83 +1,13 @@
 {
     "graph": [
         {
-            "author": " ", 
-            "cards": [
-                {
-                    "active": true, 
-                    "cardid": "f0220797-1987-11e7-8cc3-6c4008b05c4c", 
-                    "description": "", 
-                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "name": "DISCO Project Results", 
-                    "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                    "sortorder": null, 
-                    "visible": true
-                }
-            ], 
-            "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "f0220797-1987-11e7-8cc3-6c4008b05c4c", 
-                    "config": {
-                        "label": "Results/Conclusions", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "15e04bca-1988-11e7-994c-6c4008b05c4c", 
-                    "label": "Results/Conclusions", 
-                    "node_id": "f02208eb-1987-11e7-b719-6c4008b05c4c", 
-                    "sortorder": 0, 
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                }, 
-                {
-                    "card_id": "f0220797-1987-11e7-8cc3-6c4008b05c4c", 
-                    "config": {
-                        "acceptedFiles": "", 
-                        "label": "Results/Conclusions File (Optional)", 
-                        "maxFilesize": "200"
-                    }, 
-                    "id": "15e08bf8-1988-11e7-87df-6c4008b05c4c", 
-                    "label": "Results/Conclusions File (Optional)", 
-                    "node_id": "f0220a17-1987-11e7-bff6-6c4008b05c4c", 
-                    "sortorder": 1, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }
-            ], 
-            "deploymentdate": null, 
-            "deploymentfile": null, 
-            "description": "", 
-            "edges": [
-                {
-                    "description": null, 
-                    "domainnode_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                    "edgeid": "f0220e00-1987-11e7-98fc-6c4008b05c4c", 
-                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to", 
-                    "rangenode_id": "f0220a17-1987-11e7-bff6-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                    "edgeid": "f0220d57-1987-11e7-99c7-6c4008b05c4c", 
-                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to", 
-                    "rangenode_id": "f02208eb-1987-11e7-b719-6c4008b05c4c"
-                }
-            ], 
-            "forms": [], 
-            "forms_x_cards": [], 
+            "subtitle": "Project results", 
             "functions_x_graphs": [], 
-            "graphid": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-            "iconclass": "fa fa-arrow-circle-right", 
-            "isactive": true, 
             "isresource": false, 
-            "name": "DISCO Project Results", 
+            "forms_x_cards": [], 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "iconclass": "fa fa-arrow-circle-right", 
             "nodegroups": [
                 {
                     "cardinality": "1", 
@@ -86,72 +16,145 @@
                     "parentnodegroup_id": null
                 }
             ], 
+            "author": " ", 
+            "deploymentfile": null, 
+            "forms": [], 
+            "version": "", 
             "nodes": [
                 {
-                    "config": null, 
+                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
                     "datatype": "string", 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "Evaluation and Interpetation", 
-                    "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                    "nodeid": "f02208eb-1987-11e7-b719-6c4008b05c4c", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMsci/S6_Data_Evaluation", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to"
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
-                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-                    "is_collector": true, 
-                    "istopnode": true, 
-                    "name": "Dataset Intrepretation", 
-                    "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                    "nodeid": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMsci/S5_Inference_Making", 
-                    "parentproperty": ""
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "file-list", 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-                    "is_collector": false, 
+                    "nodeid": "f02208eb-1987-11e7-b719-6c4008b05c4c", 
                     "istopnode": false, 
-                    "name": "Interpretation File", 
                     "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                    "nodeid": "f0220a17-1987-11e7-bff6-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to", 
+                    "name": "Evaluation and Interpetation"
+                }, 
+                {
+                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMsci/S5_Inference_Making", 
+                    "nodeid": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                    "istopnode": true, 
+                    "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                    "is_collector": true, 
+                    "config": null, 
+                    "parentproperty": "", 
+                    "name": "Dataset Intrepretation"
+                }, 
+                {
+                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "file-list", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to"
+                    "nodeid": "f0220a17-1987-11e7-bff6-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to", 
+                    "name": "Interpretation File"
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
-            "relatable_resource_model_ids": [], 
-            "reports": [], 
+            "description": "", 
+            "cards": [
+                {
+                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
+                    "description": "", 
+                    "visible": true, 
+                    "name": "DISCO Project Results", 
+                    "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": null, 
+                    "cardid": "f0220797-1987-11e7-8cc3-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": null
+                }
+            ], 
+            "edges": [
+                {
+                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "f0220e00-1987-11e7-98fc-6c4008b05c4c", 
+                    "domainnode_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                    "rangenode_id": "f0220a17-1987-11e7-bff6-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "f0220d57-1987-11e7-99c7-6c4008b05c4c", 
+                    "domainnode_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                    "rangenode_id": "f02208eb-1987-11e7-b719-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to", 
+                    "description": null
+                }
+            ], 
+            "graphid": "f0220307-1987-11e7-895c-6c4008b05c4c", 
+            "name": "DISCO Project Results", 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000005", 
+                    "card_id": "f0220797-1987-11e7-8cc3-6c4008b05c4c", 
+                    "label": "Results/Conclusions", 
+                    "node_id": "f02208eb-1987-11e7-b719-6c4008b05c4c", 
+                    "sortorder": 0, 
+                    "config": {
+                        "width": "100%", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "label": "Results/Conclusions"
+                    }, 
+                    "id": "15e04bca-1988-11e7-994c-6c4008b05c4c"
+                }, 
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000019", 
+                    "card_id": "f0220797-1987-11e7-8cc3-6c4008b05c4c", 
+                    "label": "Results/Conclusions File (Optional)", 
+                    "node_id": "f0220a17-1987-11e7-bff6-6c4008b05c4c", 
+                    "sortorder": 1, 
+                    "config": {
+                        "maxFilesize": "200", 
+                        "acceptedFiles": "", 
+                        "label": "Results/Conclusions File (Optional)"
+                    }, 
+                    "id": "15e08bf8-1988-11e7-87df-6c4008b05c4c"
+                }
+            ], 
             "resource_2_resource_constraints": [], 
             "root": {
-                "config": null, 
-                "datatype": "semantic", 
-                "description": "", 
                 "graph_id": "f0220307-1987-11e7-895c-6c4008b05c4c", 
-                "is_collector": true, 
-                "istopnode": true, 
-                "name": "Dataset Intrepretation", 
-                "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
-                "nodeid": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                "description": "", 
+                "datatype": "semantic", 
                 "ontologyclass": "http://www.ics.forth.gr/isl/CRMsci/S5_Inference_Making", 
-                "parentproperty": ""
+                "nodeid": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                "istopnode": true, 
+                "nodegroup_id": "f02204a1-1987-11e7-9453-6c4008b05c4c", 
+                "is_collector": true, 
+                "config": null, 
+                "parentproperty": "", 
+                "name": "Dataset Intrepretation"
             }, 
-            "subtitle": "Project results", 
-            "version": ""
+            "isactive": true, 
+            "deploymentdate": null
         }
     ], 
     "metadata": {
-        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "git hash": "cae498f 2017-04-05 12:36:28 -0700", 
         "os": "Darwin", 
+        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "os version": "15.6.0"
     }
 }

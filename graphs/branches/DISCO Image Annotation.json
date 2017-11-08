@@ -1,46 +1,13 @@
 {
     "graph": [
         {
-            "author": " ", 
-            "cards": [
-                {
-                    "active": true, 
-                    "cardid": "fd6f65d4-16fe-11e7-bd5b-6c4008b05c4c", 
-                    "description": "", 
-                    "graph_id": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "name": "DISCO Image Annotation", 
-                    "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
-                    "sortorder": null, 
-                    "visible": true
-                }
-            ], 
-            "cards_x_nodes_x_widgets": [], 
-            "deploymentdate": null, 
-            "deploymentfile": null, 
-            "description": "", 
-            "edges": [
-                {
-                    "description": null, 
-                    "domainnode_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
-                    "edgeid": "3cf5b1eb-16ff-11e7-ad0f-6c4008b05c4c", 
-                    "graph_id": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to", 
-                    "rangenode_id": "3cf5b014-16ff-11e7-a58d-6c4008b05c4c"
-                }
-            ], 
-            "forms": [], 
-            "forms_x_cards": [], 
+            "subtitle": "IIIF Image annotation", 
             "functions_x_graphs": [], 
-            "graphid": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
-            "iconclass": "fa fa-picture-o", 
-            "isactive": true, 
             "isresource": false, 
-            "name": "DISCO Image Annotation", 
+            "forms_x_cards": [], 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "iconclass": "fa fa-picture-o", 
             "nodegroups": [
                 {
                     "cardinality": "1", 
@@ -49,59 +16,94 @@
                     "parentnodegroup_id": null
                 }
             ], 
+            "author": " ", 
+            "deploymentfile": null, 
+            "forms": [], 
+            "version": "", 
             "nodes": [
                 {
-                    "config": null, 
-                    "datatype": "iiif-drawing", 
-                    "description": "Represents a single node in a graph", 
                     "graph_id": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "Image", 
-                    "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
-                    "nodeid": "3cf5b014-16ff-11e7-a58d-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "iiif-drawing", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"
+                    "nodeid": "3cf5b014-16ff-11e7-a58d-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to", 
+                    "name": "Image"
                 }, 
                 {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
                     "graph_id": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
-                    "is_collector": true, 
-                    "istopnode": true, 
-                    "name": "Image Annotation", 
-                    "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
-                    "nodeid": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
-                    "parentproperty": ""
+                    "nodeid": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                    "istopnode": true, 
+                    "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                    "is_collector": true, 
+                    "config": null, 
+                    "parentproperty": "", 
+                    "name": "Image Annotation"
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
-            "relatable_resource_model_ids": [], 
-            "reports": [], 
+            "description": "", 
+            "cards": [
+                {
+                    "graph_id": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
+                    "description": "", 
+                    "visible": true, 
+                    "name": "DISCO Image Annotation", 
+                    "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": null, 
+                    "cardid": "fd6f65d4-16fe-11e7-bd5b-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": null
+                }
+            ], 
+            "edges": [
+                {
+                    "graph_id": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "3cf5b1eb-16ff-11e7-ad0f-6c4008b05c4c", 
+                    "domainnode_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                    "rangenode_id": "3cf5b014-16ff-11e7-a58d-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to", 
+                    "description": null
+                }
+            ], 
+            "graphid": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
+            "name": "DISCO Image Annotation", 
+            "cards_x_nodes_x_widgets": [], 
             "resource_2_resource_constraints": [], 
             "root": {
-                "config": null, 
-                "datatype": "semantic", 
-                "description": "", 
                 "graph_id": "fd6ed754-16fe-11e7-b571-6c4008b05c4c", 
-                "is_collector": true, 
-                "istopnode": true, 
-                "name": "Image Annotation", 
-                "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
-                "nodeid": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                "description": "", 
+                "datatype": "semantic", 
                 "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
-                "parentproperty": ""
+                "nodeid": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                "istopnode": true, 
+                "nodegroup_id": "fd6ed3ee-16fe-11e7-be78-6c4008b05c4c", 
+                "is_collector": true, 
+                "config": null, 
+                "parentproperty": "", 
+                "name": "Image Annotation"
             }, 
-            "subtitle": "IIIF Image annotation", 
-            "version": ""
+            "isactive": true, 
+            "deploymentdate": null
         }
     ], 
     "metadata": {
-        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "git hash": "cae498f 2017-04-05 12:36:28 -0700", 
         "os": "Darwin", 
+        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "os version": "15.6.0"
     }
 }

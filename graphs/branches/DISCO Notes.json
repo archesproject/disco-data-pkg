@@ -1,175 +1,13 @@
 {
     "graph": [
         {
-            "author": " ", 
-            "cards": [
-                {
-                    "active": true, 
-                    "cardid": "4bd4864c-18b9-11e7-8f46-6c4008b05c4c", 
-                    "description": "Represents a node and node type pairing", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "", 
-                    "name": "Notes", 
-                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
-                    "sortorder": 0, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "05037c51-18b9-11e7-b903-6c4008b05c4c", 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "name": "Correspondence", 
-                    "nodegroup_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
-                    "sortorder": 1, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "87f2770f-18b8-11e7-be3a-6c4008b05c4c", 
-                    "description": "", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "name": "DISCO Notes", 
-                    "nodegroup_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
-                    "sortorder": null, 
-                    "visible": true
-                }
-            ], 
-            "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "4bd4864c-18b9-11e7-8f46-6c4008b05c4c", 
-                    "config": {
-                        "label": "Note type", 
-                        "options": [
-                            {
-                                "children": [], 
-                                "collector": "", 
-                                "conceptid": "7152e528-62fb-4892-872f-53e13d303873", 
-                                "id": "549010f1-b6e5-4ae4-8bdb-0ae423de8494", 
-                                "sortorder": "", 
-                                "text": "Lab note"
-                            }, 
-                            {
-                                "children": [], 
-                                "collector": "", 
-                                "conceptid": "4ff9f6d5-0ce7-4589-99f3-9390a5b7c0af", 
-                                "id": "7edb1a5c-f6d7-4286-ad5e-5165ce3443f9", 
-                                "sortorder": "", 
-                                "text": "Memo"
-                            }, 
-                            {
-                                "children": [], 
-                                "collector": "", 
-                                "conceptid": "4903ca34-5201-4cc9-a592-0d21215697e7", 
-                                "id": "63bbc884-5937-49b9-a2d8-1b690689d53b", 
-                                "sortorder": "", 
-                                "text": "Observation"
-                            }, 
-                            {
-                                "children": [], 
-                                "collector": "", 
-                                "conceptid": "1911e6e5-06f1-4467-8144-4c08ff2dea4d", 
-                                "id": "cf947ce6-d294-4b52-bd9a-6d11fc456cfc", 
-                                "sortorder": "", 
-                                "text": "To do"
-                            }
-                        ], 
-                        "placeholder": "Select an option"
-                    }, 
-                    "id": "d2376061-18b9-11e7-830a-6c4008b05c4c", 
-                    "label": "Note type", 
-                    "node_id": "8f0bd411-18b9-11e7-8508-6c4008b05c4c", 
-                    "sortorder": 0, 
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                }, 
-                {
-                    "card_id": "4bd4864c-18b9-11e7-8f46-6c4008b05c4c", 
-                    "config": {
-                        "label": "Note", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "d237a84c-18b9-11e7-8530-6c4008b05c4c", 
-                    "label": "Note", 
-                    "node_id": "91e43d00-18b9-11e7-a683-6c4008b05c4c", 
-                    "sortorder": 1, 
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                }, 
-                {
-                    "card_id": "05037c51-18b9-11e7-b903-6c4008b05c4c", 
-                    "config": {
-                        "acceptedFiles": "", 
-                        "label": "Correspondence", 
-                        "maxFilesize": "200"
-                    }, 
-                    "id": "d238350a-18b9-11e7-aa8c-6c4008b05c4c", 
-                    "label": "Correspondence", 
-                    "node_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
-                    "sortorder": 0, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }
-            ], 
-            "deploymentdate": null, 
-            "deploymentfile": null, 
-            "description": "", 
-            "edges": [
-                {
-                    "description": null, 
-                    "domainnode_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
-                    "edgeid": "8f0bd5c7-18b9-11e7-9d15-6c4008b05c4c", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
-                    "rangenode_id": "8f0bd411-18b9-11e7-8508-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
-                    "edgeid": "4bd48c02-18b9-11e7-949e-6c4008b05c4c", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by", 
-                    "rangenode_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
-                    "edgeid": "91e43eb8-18b9-11e7-aff4-6c4008b05c4c", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note", 
-                    "rangenode_id": "91e43d00-18b9-11e7-a683-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
-                    "edgeid": "f4593f7d-18b8-11e7-a32c-6c4008b05c4c", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by", 
-                    "rangenode_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c"
-                }
-            ], 
-            "forms": [], 
-            "forms_x_cards": [], 
+            "subtitle": "Digital lab notes, correspondence", 
             "functions_x_graphs": [], 
-            "graphid": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-            "iconclass": "fa fa-text-width", 
-            "isactive": true, 
             "isresource": false, 
-            "name": "DISCO Notes", 
+            "forms_x_cards": [], 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "iconclass": "fa fa-text-width", 
             "nodegroups": [
                 {
                     "cardinality": "1", 
@@ -190,100 +28,267 @@
                     "parentnodegroup_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c"
                 }
             ], 
+            "author": " ", 
+            "deploymentfile": null, 
+            "forms": [], 
+            "version": "", 
             "nodes": [
                 {
-                    "config": null, 
-                    "datatype": "file-list", 
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
                     "description": "Represents a single node in a graph", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "is_collector": true, 
-                    "istopnode": false, 
-                    "name": "Correspondence", 
-                    "nodegroup_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
-                    "nodeid": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
+                    "isrequired": false, 
+                    "datatype": "file-list", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "is_collector": true, 
+                    "nodeid": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
                     "istopnode": false, 
-                    "name": "Notes", 
-                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
-                    "nodeid": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by"
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "nodegroup_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
                     "is_collector": true, 
-                    "istopnode": true, 
-                    "name": "DISCO Notes", 
-                    "nodegroup_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
-                    "nodeid": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment", 
-                    "parentproperty": ""
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by", 
+                    "name": "Correspondence"
                 }, 
                 {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment", 
+                    "nodeid": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "is_collector": true, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by", 
+                    "name": "Notes"
+                }, 
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment", 
+                    "nodeid": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                    "istopnode": true, 
+                    "nodegroup_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                    "is_collector": true, 
+                    "config": null, 
+                    "parentproperty": "", 
+                    "name": "DISCO Notes"
+                }, 
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "concept", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
+                    "nodeid": "8f0bd411-18b9-11e7-8508-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "is_collector": false, 
                     "config": {
                         "rdmCollection": "0db46a43-b3a0-478a-815e-78b065b790e2"
                     }, 
-                    "datatype": "concept", 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "Note type", 
-                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
-                    "nodeid": "8f0bd411-18b9-11e7-8508-6c4008b05c4c", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "name": "Note type"
                 }, 
                 {
-                    "config": null, 
-                    "datatype": "string", 
-                    "description": "Represents a single node in a graph", 
                     "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "Note", 
-                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
-                    "nodeid": "91e43d00-18b9-11e7-a683-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "string", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E62_String", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note"
+                    "nodeid": "91e43d00-18b9-11e7-a683-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note", 
+                    "name": "Note"
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
-            "relatable_resource_model_ids": [], 
-            "reports": [], 
+            "description": "", 
+            "cards": [
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "description": "Represents a node and node type pairing", 
+                    "visible": true, 
+                    "name": "Notes", 
+                    "nodegroup_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": 0, 
+                    "cardid": "4bd4864c-18b9-11e7-8f46-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": ""
+                }, 
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "visible": true, 
+                    "name": "Correspondence", 
+                    "nodegroup_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": 1, 
+                    "cardid": "05037c51-18b9-11e7-b903-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": null
+                }, 
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "description": "", 
+                    "visible": true, 
+                    "name": "DISCO Notes", 
+                    "nodegroup_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": null, 
+                    "cardid": "87f2770f-18b8-11e7-be3a-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": null
+                }
+            ], 
+            "edges": [
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "8f0bd5c7-18b9-11e7-9d15-6c4008b05c4c", 
+                    "domainnode_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "rangenode_id": "8f0bd411-18b9-11e7-8508-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "4bd48c02-18b9-11e7-949e-6c4008b05c4c", 
+                    "domainnode_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                    "rangenode_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "91e43eb8-18b9-11e7-aff4-6c4008b05c4c", 
+                    "domainnode_id": "4bd48270-18b9-11e7-8981-6c4008b05c4c", 
+                    "rangenode_id": "91e43d00-18b9-11e7-a683-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "f4593f7d-18b8-11e7-a32c-6c4008b05c4c", 
+                    "domainnode_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                    "rangenode_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by", 
+                    "description": null
+                }
+            ], 
+            "graphid": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
+            "name": "DISCO Notes", 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000002", 
+                    "card_id": "4bd4864c-18b9-11e7-8f46-6c4008b05c4c", 
+                    "label": "Note type", 
+                    "node_id": "8f0bd411-18b9-11e7-8508-6c4008b05c4c", 
+                    "sortorder": 0, 
+                    "config": {
+                        "placeholder": "Select an option", 
+                        "options": [
+                            {
+                                "conceptid": "7152e528-62fb-4892-872f-53e13d303873", 
+                                "text": "Lab note", 
+                                "id": "549010f1-b6e5-4ae4-8bdb-0ae423de8494", 
+                                "sortorder": "", 
+                                "collector": "", 
+                                "children": []
+                            }, 
+                            {
+                                "conceptid": "4ff9f6d5-0ce7-4589-99f3-9390a5b7c0af", 
+                                "text": "Memo", 
+                                "id": "7edb1a5c-f6d7-4286-ad5e-5165ce3443f9", 
+                                "sortorder": "", 
+                                "collector": "", 
+                                "children": []
+                            }, 
+                            {
+                                "conceptid": "4903ca34-5201-4cc9-a592-0d21215697e7", 
+                                "text": "Observation", 
+                                "id": "63bbc884-5937-49b9-a2d8-1b690689d53b", 
+                                "sortorder": "", 
+                                "collector": "", 
+                                "children": []
+                            }, 
+                            {
+                                "conceptid": "1911e6e5-06f1-4467-8144-4c08ff2dea4d", 
+                                "text": "To do", 
+                                "id": "cf947ce6-d294-4b52-bd9a-6d11fc456cfc", 
+                                "sortorder": "", 
+                                "collector": "", 
+                                "children": []
+                            }
+                        ], 
+                        "label": "Note type"
+                    }, 
+                    "id": "d2376061-18b9-11e7-830a-6c4008b05c4c"
+                }, 
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000005", 
+                    "card_id": "4bd4864c-18b9-11e7-8f46-6c4008b05c4c", 
+                    "label": "Note", 
+                    "node_id": "91e43d00-18b9-11e7-a683-6c4008b05c4c", 
+                    "sortorder": 1, 
+                    "config": {
+                        "width": "100%", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "label": "Note"
+                    }, 
+                    "id": "d237a84c-18b9-11e7-8530-6c4008b05c4c"
+                }, 
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000019", 
+                    "card_id": "05037c51-18b9-11e7-b903-6c4008b05c4c", 
+                    "label": "Correspondence", 
+                    "node_id": "f4593da3-18b8-11e7-a357-6c4008b05c4c", 
+                    "sortorder": 0, 
+                    "config": {
+                        "maxFilesize": "200", 
+                        "acceptedFiles": "", 
+                        "label": "Correspondence"
+                    }, 
+                    "id": "d238350a-18b9-11e7-aa8c-6c4008b05c4c"
+                }
+            ], 
             "resource_2_resource_constraints": [], 
             "root": {
-                "config": null, 
-                "datatype": "semantic", 
-                "description": "", 
                 "graph_id": "87f1f285-18b8-11e7-a888-6c4008b05c4c", 
-                "is_collector": true, 
-                "istopnode": true, 
-                "name": "DISCO Notes", 
-                "nodegroup_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
-                "nodeid": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                "description": "", 
+                "datatype": "semantic", 
                 "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment", 
-                "parentproperty": ""
+                "nodeid": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                "istopnode": true, 
+                "nodegroup_id": "87f1efd1-18b8-11e7-acd8-6c4008b05c4c", 
+                "is_collector": true, 
+                "config": null, 
+                "parentproperty": "", 
+                "name": "DISCO Notes"
             }, 
-            "subtitle": "Digital lab notes, correspondence", 
-            "version": ""
+            "isactive": true, 
+            "deploymentdate": null
         }
     ], 
     "metadata": {
-        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "git hash": "cae498f 2017-04-05 12:36:28 -0700", 
         "os": "Darwin", 
+        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "os version": "15.6.0"
     }
 }

@@ -1,184 +1,13 @@
 {
     "graph": [
         {
-            "author": " ", 
-            "cards": [
-                {
-                    "active": true, 
-                    "cardid": "cd9806cc-17b2-11e7-9e81-6c4008b05c4c", 
-                    "description": "", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "name": "DISCO Summary", 
-                    "nodegroup_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
-                    "sortorder": null, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "e942b07d-17b3-11e7-85ef-6c4008b05c4c", 
-                    "description": "Start/End dates for resources.  Assumed to be typed and within calendar time. \n\nConnects to Activity (E7) and Historical Event (E5) resource models via P114\nConnects to Heritage Resource (E18) and Heritage Resource Group (E27) resource models via P12i\nConnects to Actor (E39) resource model via P11i", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "", 
-                    "name": "Project Duration", 
-                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "sortorder": 1, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "602c2cd1-17b3-11e7-b1ba-6c4008b05c4c", 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "name": "Project Notes", 
-                    "nodegroup_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
-                    "sortorder": 0, 
-                    "visible": true
-                }
-            ], 
-            "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "e942b07d-17b3-11e7-85ef-6c4008b05c4c", 
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD", 
-                        "label": "Project End", 
-                        "maxDate": false, 
-                        "minDate": false, 
-                        "placeholder": "Enter date", 
-                        "viewMode": "days"
-                    }, 
-                    "id": "e942b951-17b3-11e7-887f-6c4008b05c4c", 
-                    "label": "Project End", 
-                    "node_id": "e942b1dc-17b3-11e7-81c0-6c4008b05c4c", 
-                    "sortorder": 1, 
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                }, 
-                {
-                    "card_id": "602c2cd1-17b3-11e7-b1ba-6c4008b05c4c", 
-                    "config": {
-                        "label": "Notes", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "fe8d3b6b-17be-11e7-9d2b-6c4008b05c4c", 
-                    "label": "Notes", 
-                    "node_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
-                    "sortorder": 0, 
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                }, 
-                {
-                    "card_id": "e942b07d-17b3-11e7-85ef-6c4008b05c4c", 
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD", 
-                        "label": "Project Start", 
-                        "maxDate": false, 
-                        "minDate": false, 
-                        "placeholder": "Enter date", 
-                        "viewMode": "days"
-                    }, 
-                    "id": "e942b9fd-17b3-11e7-aaf2-6c4008b05c4c", 
-                    "label": "Project Start", 
-                    "node_id": "e942b523-17b3-11e7-80d5-6c4008b05c4c", 
-                    "sortorder": 0, 
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                }
-            ], 
-            "deploymentdate": null, 
-            "deploymentfile": null, 
-            "description": "", 
-            "edges": [
-                {
-                    "description": null, 
-                    "domainnode_id": "e942b36b-17b3-11e7-b94b-6c4008b05c4c", 
-                    "edgeid": "e942c5f0-17b3-11e7-8d22-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by", 
-                    "rangenode_id": "e942b523-17b3-11e7-80d5-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "edgeid": "e942c7c5-17b3-11e7-b537-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P116i_is_started_by", 
-                    "rangenode_id": "e942b799-17b3-11e7-b3b2-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "e942b799-17b3-11e7-b3b2-6c4008b05c4c", 
-                    "edgeid": "e942c4f5-17b3-11e7-8fb2-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span", 
-                    "rangenode_id": "e942b36b-17b3-11e7-b94b-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
-                    "edgeid": "e942c923-17b3-11e7-a221-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during", 
-                    "rangenode_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "e942b6d1-17b3-11e7-9fe5-6c4008b05c4c", 
-                    "edgeid": "e942c442-17b3-11e7-b2a1-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span", 
-                    "rangenode_id": "e942b451-17b3-11e7-ab65-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
-                    "edgeid": "2befcdfd-17b3-11e7-a517-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose", 
-                    "rangenode_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "e942b451-17b3-11e7-ab65-6c4008b05c4c", 
-                    "edgeid": "e942c578-17b3-11e7-aa00-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by", 
-                    "rangenode_id": "e942b1dc-17b3-11e7-81c0-6c4008b05c4c"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "edgeid": "e942c666-17b3-11e7-b527-6c4008b05c4c", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P115i_is_finished_by", 
-                    "rangenode_id": "e942b6d1-17b3-11e7-9fe5-6c4008b05c4c"
-                }
-            ], 
-            "forms": [], 
-            "forms_x_cards": [], 
+            "subtitle": "Project summary notes for DISCO projects", 
             "functions_x_graphs": [], 
-            "graphid": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-            "iconclass": "fa fa-archive", 
-            "isactive": true, 
             "isresource": false, 
-            "name": "DISCO Summary", 
+            "forms_x_cards": [], 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "iconclass": "fa fa-archive", 
             "nodegroups": [
                 {
                     "cardinality": "1", 
@@ -199,150 +28,330 @@
                     "parentnodegroup_id": null
                 }
             ], 
+            "author": " ", 
+            "deploymentfile": null, 
+            "forms": [], 
+            "version": "", 
             "nodes": [
                 {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
                     "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "End of Existence", 
-                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "nodeid": "e942b6d1-17b3-11e7-9fe5-6c4008b05c4c", 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P115i_is_finished_by"
+                    "nodeid": "e942b6d1-17b3-11e7-9fe5-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P115i_is_finished_by", 
+                    "name": "End of Existence"
                 }, 
                 {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "Represents a single node in a graph", 
                     "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "End of Existence Time Span", 
-                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span", 
                     "nodeid": "e942b451-17b3-11e7-ab65-6c4008b05c4c", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"
+                    "istopnode": false, 
+                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span", 
+                    "name": "End of Existence Time Span"
                 }, 
                 {
-                    "config": null, 
-                    "datatype": "date", 
-                    "description": "Represents a single node in a graph", 
                     "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "Start Date of Existence", 
-                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "date", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation", 
                     "nodeid": "e942b523-17b3-11e7-80d5-6c4008b05c4c", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by"
+                    "istopnode": false, 
+                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by", 
+                    "name": "Start Date of Existence"
                 }, 
                 {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "Represents a single node in a graph", 
                     "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": false, 
-                    "istopnode": false, 
-                    "name": "Beginning of Existence Time Span", 
-                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "nodeid": "e942b36b-17b3-11e7-b94b-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"
+                    "nodeid": "e942b36b-17b3-11e7-b94b-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span", 
+                    "name": "Beginning of Existence Time Span"
                 }, 
                 {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
                     "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": true, 
-                    "istopnode": true, 
-                    "name": "DISCO Project Summary", 
-                    "nodegroup_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
-                    "nodeid": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity", 
-                    "parentproperty": ""
+                    "nodeid": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                    "istopnode": true, 
+                    "nodegroup_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                    "is_collector": true, 
+                    "config": null, 
+                    "parentproperty": "", 
+                    "name": "DISCO Project Summary"
                 }, 
                 {
-                    "config": null, 
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
                     "datatype": "string", 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": true, 
-                    "istopnode": false, 
-                    "name": "Project Summary Notes", 
-                    "nodegroup_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
-                    "nodeid": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose"
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": false, 
+                    "nodeid": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
                     "istopnode": false, 
-                    "name": "Beginning of Existence", 
-                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "nodeid": "e942b799-17b3-11e7-b3b2-6c4008b05c4c", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P116i_is_started_by"
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
-                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "nodegroup_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
                     "is_collector": true, 
-                    "istopnode": false, 
-                    "name": "Existence Event", 
-                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "nodeid": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E5_Event", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during"
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose", 
+                    "name": "Project Summary Notes"
                 }, 
                 {
-                    "config": null, 
-                    "datatype": "date", 
-                    "description": "Represents a single node in a graph", 
                     "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                    "is_collector": false, 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence", 
+                    "nodeid": "e942b799-17b3-11e7-b3b2-6c4008b05c4c", 
                     "istopnode": false, 
-                    "name": "End Date of Existence", 
                     "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
-                    "nodeid": "e942b1dc-17b3-11e7-81c0-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P116i_is_started_by", 
+                    "name": "Beginning of Existence"
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "description": "", 
+                    "isrequired": false, 
+                    "datatype": "semantic", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E5_Event", 
+                    "nodeid": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "is_collector": true, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during", 
+                    "name": "Existence Event"
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "isrequired": false, 
+                    "datatype": "date", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E49_Time_Appellation", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by"
+                    "nodeid": "e942b1dc-17b3-11e7-81c0-6c4008b05c4c", 
+                    "istopnode": false, 
+                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "is_collector": false, 
+                    "config": null, 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by", 
+                    "name": "End Date of Existence"
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
-            "relatable_resource_model_ids": [], 
-            "reports": [], 
+            "description": "", 
+            "cards": [
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "description": "", 
+                    "visible": true, 
+                    "name": "DISCO Summary", 
+                    "nodegroup_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": null, 
+                    "cardid": "cd9806cc-17b2-11e7-9e81-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "description": "Start/End dates for resources.  Assumed to be typed and within calendar time. \n\nConnects to Activity (E7) and Historical Event (E5) resource models via P114\nConnects to Heritage Resource (E18) and Heritage Resource Group (E27) resource models via P12i\nConnects to Actor (E39) resource model via P11i", 
+                    "visible": true, 
+                    "name": "Project Duration", 
+                    "nodegroup_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": 1, 
+                    "cardid": "e942b07d-17b3-11e7-85ef-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": ""
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "description": "Represents a single node in a graph", 
+                    "visible": true, 
+                    "name": "Project Notes", 
+                    "nodegroup_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
+                    "helptitle": null, 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "sortorder": 0, 
+                    "cardid": "602c2cd1-17b3-11e7-b1ba-6c4008b05c4c", 
+                    "active": true, 
+                    "instructions": null
+                }
+            ], 
+            "edges": [
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "e942c5f0-17b3-11e7-8d22-6c4008b05c4c", 
+                    "domainnode_id": "e942b36b-17b3-11e7-b94b-6c4008b05c4c", 
+                    "rangenode_id": "e942b523-17b3-11e7-80d5-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "e942c7c5-17b3-11e7-b537-6c4008b05c4c", 
+                    "domainnode_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "rangenode_id": "e942b799-17b3-11e7-b3b2-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P116i_is_started_by", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "e942c4f5-17b3-11e7-8fb2-6c4008b05c4c", 
+                    "domainnode_id": "e942b799-17b3-11e7-b3b2-6c4008b05c4c", 
+                    "rangenode_id": "e942b36b-17b3-11e7-b94b-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "e942c923-17b3-11e7-a221-6c4008b05c4c", 
+                    "domainnode_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                    "rangenode_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "e942c442-17b3-11e7-b2a1-6c4008b05c4c", 
+                    "domainnode_id": "e942b6d1-17b3-11e7-9fe5-6c4008b05c4c", 
+                    "rangenode_id": "e942b451-17b3-11e7-ab65-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "2befcdfd-17b3-11e7-a517-6c4008b05c4c", 
+                    "domainnode_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                    "rangenode_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "e942c578-17b3-11e7-aa00-6c4008b05c4c", 
+                    "domainnode_id": "e942b451-17b3-11e7-ab65-6c4008b05c4c", 
+                    "rangenode_id": "e942b1dc-17b3-11e7-81c0-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by", 
+                    "description": null
+                }, 
+                {
+                    "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+                    "name": null, 
+                    "edgeid": "e942c666-17b3-11e7-b527-6c4008b05c4c", 
+                    "domainnode_id": "e942ad68-17b3-11e7-9226-6c4008b05c4c", 
+                    "rangenode_id": "e942b6d1-17b3-11e7-9fe5-6c4008b05c4c", 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P115i_is_finished_by", 
+                    "description": null
+                }
+            ], 
+            "graphid": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
+            "name": "DISCO Summary", 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000004", 
+                    "card_id": "e942b07d-17b3-11e7-85ef-6c4008b05c4c", 
+                    "label": "Project End", 
+                    "node_id": "e942b1dc-17b3-11e7-81c0-6c4008b05c4c", 
+                    "sortorder": 1, 
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD", 
+                        "maxDate": false, 
+                        "label": "Project End", 
+                        "viewMode": "days", 
+                        "placeholder": "Enter date", 
+                        "minDate": false
+                    }, 
+                    "id": "e942b951-17b3-11e7-887f-6c4008b05c4c"
+                }, 
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000005", 
+                    "card_id": "602c2cd1-17b3-11e7-b1ba-6c4008b05c4c", 
+                    "label": "Notes", 
+                    "node_id": "2befcc1e-17b3-11e7-98a2-6c4008b05c4c", 
+                    "sortorder": 0, 
+                    "config": {
+                        "width": "100%", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "label": "Notes"
+                    }, 
+                    "id": "fe8d3b6b-17be-11e7-9d2b-6c4008b05c4c"
+                }, 
+                {
+                    "widget_id": "10000000-0000-0000-0000-000000000004", 
+                    "card_id": "e942b07d-17b3-11e7-85ef-6c4008b05c4c", 
+                    "label": "Project Start", 
+                    "node_id": "e942b523-17b3-11e7-80d5-6c4008b05c4c", 
+                    "sortorder": 0, 
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD", 
+                        "maxDate": false, 
+                        "label": "Project Start", 
+                        "viewMode": "days", 
+                        "placeholder": "Enter date", 
+                        "minDate": false
+                    }, 
+                    "id": "e942b9fd-17b3-11e7-aaf2-6c4008b05c4c"
+                }
+            ], 
             "resource_2_resource_constraints": [], 
             "root": {
-                "config": null, 
-                "datatype": "semantic", 
-                "description": "", 
                 "graph_id": "cd97766b-17b2-11e7-bf20-6c4008b05c4c", 
-                "is_collector": true, 
-                "istopnode": true, 
-                "name": "DISCO Project Summary", 
-                "nodegroup_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
-                "nodeid": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                "description": "", 
+                "datatype": "semantic", 
                 "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity", 
-                "parentproperty": ""
+                "nodeid": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                "istopnode": true, 
+                "nodegroup_id": "cd97721e-17b2-11e7-8c8c-6c4008b05c4c", 
+                "is_collector": true, 
+                "config": null, 
+                "parentproperty": "", 
+                "name": "DISCO Project Summary"
             }, 
-            "subtitle": "Project summary notes for DISCO projects", 
-            "version": ""
+            "isactive": true, 
+            "deploymentdate": null
         }
     ], 
     "metadata": {
-        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "git hash": "cae498f 2017-04-05 12:36:28 -0700", 
         "os": "Darwin", 
+        "db": "PostgreSQL 9.6.1 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
         "os version": "15.6.0"
     }
 }
