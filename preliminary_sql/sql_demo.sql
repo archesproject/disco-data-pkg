@@ -2,7 +2,6 @@ INSERT INTO iiif_manifests (id, url)
 VALUES
 (uuid_generate_v1(), 'http://127.0.0.1/~dwuthrich/manifests/he/29986_004.json');
 
-
 SET CLIENT_ENCODING TO UTF8;
 BEGIN;
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap)
