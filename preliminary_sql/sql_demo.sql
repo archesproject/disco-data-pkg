@@ -121,6 +121,96 @@ INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, acti
        }
    ]', TRUE, 'ion-search', TRUE, TRUE);
 
+INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap)
+   VALUES (public.uuid_generate_v1mc(), 'Hex', '[
+      {
+        "layout": {},
+        "source": "search-results-hex",
+        "filter": [
+          "==",
+          "id",
+          ""
+        ],
+        "paint": {
+          "fill-extrusion-color": "#54278f",
+          "fill-extrusion-height": {
+            "property": "doc_count",
+            "type": "exponential",
+            "stops": [
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                5000
+              ]
+            ]
+          },
+          "fill-extrusion-opacity": 0.85
+        },
+        "type": "fill-extrusion",
+        "id": "search-results-hex-outline-highlighted"
+      },
+      {
+        "layout": {},
+        "source": "search-results-hex",
+        "filter": [
+          "all",
+          [
+            ">",
+            "doc_count",
+            0
+          ]
+        ],
+        "paint": {
+          "fill-extrusion-color": {
+            "property": "doc_count",
+            "stops": [
+              [
+                1,
+                "#f2f0f7"
+              ],
+              [
+                5,
+                "#cbc9e2"
+              ],
+              [
+                10,
+                "#9e9ac8"
+              ],
+              [
+                20,
+                "#756bb1"
+              ],
+              [
+                50,
+                "#54278f"
+              ]
+            ]
+          },
+          "fill-extrusion-height": {
+            "property": "doc_count",
+            "type": "exponential",
+            "stops": [
+              [
+                0,
+                0
+              ],
+              [
+                500,
+                10000
+              ]
+            ]
+          },
+          "fill-extrusion-opacity": 0.5
+        },
+        "type": "fill-extrusion",
+        "id": "search-results-hex"
+      }
+
+   ]', TRUE, 'ion-funnel', TRUE, FALSE);
+
 CREATE TABLE "lincoln_sites" (gid serial,
 "id" numeric(10,0),
 "site_name" varchar(25));
