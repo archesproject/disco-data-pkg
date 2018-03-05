@@ -6,185 +6,130 @@ SET CLIENT_ENCODING TO UTF8;
 BEGIN;
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap)
    VALUES (public.uuid_generate_v1mc(), 'Search Results', '[
-	{
-		"paint": {
-			"heatmap-intensity": [
-				"interpolate",
-				[
-					"linear"
-				],
-				[
-					"zoom"
-				],
-				0,
-				1,
-				25,
-				10
-			],
-			"heatmap-weight": [
-				"interpolate",
-				[
-					"linear"
-				],
-				[
-					"get",
-					"doc_count"
-				],
-				0,
-				0,
-				6,
-				1
-			],
-			"heatmap-color": [
-				"interpolate",
-				[
-					"linear"
-				],
-				[
-					"heatmap-density"
-				],
-				0,
-				"rgba(33,102,172,0)",
-				0.2,
-				"rgb(103,169,207)",
-				0.4,
-				"rgb(209,229,240)",
-				0.6,
-				"rgb(253,219,199)",
-				0.8,
-				"rgb(239,138,98)",
-				1,
-				"rgb(178,24,43)"
-			],
-			"heatmap-radius": [
-				"interpolate",
-				[
-					"linear"
-				],
-				[
-					"zoom"
-				],
-				0,
-				2,
-				25,
-				25
-			],
-			"heatmap-opacity": 1
-		},
-		"type": "heatmap",
-		"id": "search-results-heat",
-		"source": "search-results-hashes"
-	},
-	{
-		"layout": {
-			"icon-image": "marker-15",
-			"icon-allow-overlap": true,
-			"icon-offset": [
-				0,
-				-6
-			],
-			"icon-size": 2
-		},
-		"source": "search-results-points",
-		"filter": [
-			"all",
-			[
-				"==",
-				"$type",
-				"Point"
-			],
-			[
-				"!=",
-				"highlight",
-				true
-			]
-		],
-		"paint": {},
-		"type": "symbol",
-		"id": "search-results-points-markers"
-	},
-	{
-		"layout": {
-			"icon-image": "marker-15",
-			"icon-allow-overlap": true,
-			"icon-offset": [
-				0,
-				-6
-			],
-			"icon-size": 3
-		},
-		"source": "search-results-points",
-		"filter": [
-			"all",
-			[
-				"==",
-				"$type",
-				"Point"
-			],
-			[
-				"==",
-				"highlight",
-				true
-			]
-		],
-		"paint": {},
-		"type": "symbol",
-		"id": "search-results-points-markers-highlighted"
-	},
-	{
-		"layout": {
-			"visibility": "visible"
-		},
-		"source": "search-results-points",
-		"filter": [
-			"all",
-			[
-				"==",
-				"$type",
-				"Point"
-			],
-			[
-				"==",
-				"highlight",
-				true
-			]
-		],
-		"paint": {
-			"circle-translate": [
-				0,
-				-25
-			],
-			"circle-color": "rgba(0,0,0,0)",
-			"circle-radius": 16
-		},
-		"type": "circle",
-		"id": "search-results-points-markers-point-highlighted"
-	},
-	{
-		"layout": {
-			"visibility": "visible"
-		},
-		"source": "search-results-points",
-		"filter": [
-			"all",
-			[
-				"==",
-				"$type",
-				"Point"
-			]
-		],
-		"paint": {
-			"circle-translate": [
-				0,
-				-16
-			],
-			"circle-color": "rgba(0,0,0,0)",
-			"circle-radius": 11
-		},
-		"type": "circle",
-		"id": "search-results-points-markers-point"
-	}
-]', TRUE, 'ion-search', TRUE, TRUE);
+        {
+           "id": "search-results-heat",
+           "maxzoom": 17,
+           "minzoom": 9,
+           "type": "heatmap",
+           "source": "search-results-hashes",
+           "paint": {
+               "heatmap-weight": [
+                   "interpolate", [
+                       "linear"
+                   ],
+                   [
+                       "get",
+                       "doc_count"
+                   ],
+                   0,
+                   0,
+                   6,
+                   1
+               ],
+               "heatmap-intensity": [
+                   "interpolate", [
+                       "linear"
+                   ],
+                   [
+                       "zoom"
+                   ],
+                   0,
+                   1,
+                   25,
+                   10
+               ],
+               "heatmap-color": [
+                   "interpolate", [
+                       "linear"
+                   ],
+                   [
+                       "heatmap-density"
+                   ],
+                   0,
+                   "rgba(33,102,172,0)",
+                   0.2,
+                   "rgb(103,169,207)",
+                   0.4,
+                   "rgb(209,229,240)",
+                   0.6,
+                   "rgb(253,219,199)",
+                   0.8,
+                   "rgb(239,138,98)",
+                   1,
+                   "rgb(178,24,43)"
+               ],
+               "heatmap-radius": [
+                   "interpolate", [
+                       "linear"
+                   ],
+                   [
+                       "zoom"
+                   ],
+                   0,
+                   2,
+                   25,
+                   75
+               ],
+               "heatmap-opacity": 0.6
+           }
+       }
+   ]', TRUE, 'ion-search', TRUE, FALSE);
+
+
+
+INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap)
+   VALUES (public.uuid_generate_v1mc(), 'Map Markers', '[
+       {
+           "id": "search-results-points-markers",
+           "type": "symbol",
+           "source": "search-results-points",
+           "filter": [
+               "all", [
+                   "==",
+                   "$type",
+                   "Point"
+               ],
+               [
+                   "!=",
+                   "highlight",
+                   true
+               ]
+           ],
+           "layout": {
+               "icon-image": "marker-15",
+               "icon-size": 1,
+               "icon-offset": [0, -6],
+               "icon-allow-overlap": true
+           },
+           "paint": {}
+       },
+       {
+           "id": "search-results-points-markers-highlighted",
+           "type": "symbol",
+           "source": "search-results-points",
+           "filter": [
+               "all", [
+                   "==",
+                   "$type",
+                   "Point"
+               ],
+               [
+                   "==",
+                   "highlight",
+                   true
+               ]
+           ],
+           "layout": {
+               "icon-image": "marker-15",
+               "icon-size": 1.3,
+               "icon-offset": [0, -6],
+               "icon-allow-overlap": true
+           },
+           "paint": {}
+       }
+   ]', TRUE, 'ion-location', TRUE, TRUE);
+
+
 
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap)
    VALUES (public.uuid_generate_v1mc(), 'Hex', '[
@@ -275,7 +220,6 @@ INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, acti
       }
 
    ]', TRUE, 'ion-funnel', TRUE, FALSE);
-
 CREATE TABLE "lincoln_sites" (gid serial,
 "id" numeric(10,0),
 "site_name" varchar(25));
