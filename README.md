@@ -23,5 +23,5 @@ To load data the target must be an arches project rather than the arches applica
 ```
 arches-project create myproject
 cd myproject
-python manage.py packages -o load_package -s https://github.com/archesproject/disco_data/archive/master.zip -db true
+python manage.py packages -o load_package -s https://github.com/archesproject/disco-data-pkg/archive/master.zip -db true
 ```
