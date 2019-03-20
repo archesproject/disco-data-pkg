@@ -689,7 +689,7 @@
                 {
                     "graph_id": "d41008a1-17ae-11e7-8a22-6c4008b05c4c",
                     "description": "Represents a single node in a graph",
-                    "datatype": "csv-chart-json",
+                    "datatype": "charting",
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object",
                     "nodeid": "84e64d19-1a43-11e7-b9ea-6c4008b05c4c",
                     "istopnode": false,

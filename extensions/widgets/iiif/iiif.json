@@ -1,0 +1,14 @@
+{
+    "widgetid": "10000000-0000-0000-0000-000000000022",
+    "name": "iiif-widget",
+    "datatype": "iiif-drawing",
+    "component": "views/components/widgets/iiif",
+    "helptext": null,
+    "defaultconfig": {
+            "options": [],
+            "rerender": true,
+            "nameLabel": "Name",
+            "typeLabel": "Type",
+            "placeholder": ""
+        }
+}

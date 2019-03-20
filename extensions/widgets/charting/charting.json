@@ -1,0 +1,11 @@
+{
+    "widgetid": "10000000-0000-0000-0000-000000000020",
+    "name": "charting-widget",
+    "datatype": "charting",
+    "component": "views/components/widgets/charting",
+    "helptext": null,
+    "defaultconfig": {
+        "maxFilesize": "200",
+        "acceptedFiles": ""
+    }
+}
